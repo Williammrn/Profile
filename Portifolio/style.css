@@ -30,10 +30,15 @@ header .logo img{
     max-height: 150px;
 }
 header a {
-    color: white;
+    color: rgb(109, 106, 106);
     text-decoration: none;
-
+    display: inline-block;
+    transition: .2;
 }
+header a:hover{
+   color: #fff;
+   transform: scale(1.5); 
+} 
 header nav ul{
     list-style-type: none;
 }
@@ -45,8 +50,38 @@ header .botao-contato button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 500px;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+}
+header .botao-contato button:hover{
+    box-shadow: 0px 0px 8px white;
+}
+
+.sidebar{
+    position: fixed;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    height: 100%;
+    padding: 50px 10px 30px 10px;
+    border-right: 1px #fff;
+   
+}
+.logo-img{
+    width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.text{
+    color: #8a8a8a;
+    text-align: center;
+}
+aside .nome{
+    font-size: 30px;
+    color: #f5f5f5;
 }
